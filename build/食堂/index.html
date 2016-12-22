@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<script src="http://api.map.baidu.com/api?type=quick&ak=dg05Yew93CtRGyk9y96zwaRDGrCi0Y7f&v=1.0" type="text/javascript"></script> 
+	</head>
+
+	<body>
+		<h1>食堂</h1>
+		<p>听说出了新套餐，可以去尝尝看</p>
+		<div id="l-map" style="width:40%; height: 300px;"></div>
+	<body>
+
+</html>
+
+<script type="text/javascript">  
+	var map = new BMap.Map("l-map");  
+	map.centerAndZoom(new BMap.Point(120.091, 30.314), 17);  
+	map.addControl(new BMap.ZoomControl());
+	var marker = new BMap.Marker(new BMap.Point(120.091, 30.314)); 
+	map.addOverlay(marker);
+</script>

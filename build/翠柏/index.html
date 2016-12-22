@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<script src="http://api.map.baidu.com/api?type=quick&ak=dg05Yew93CtRGyk9y96zwaRDGrCi0Y7f&v=1.0" type="text/javascript"></script> 
+	</head>
+
+	<body>
+		<h1>翠柏</h1>
+		<p>还不错的地方</p>
+		<div id="l-map" style="width:40%; height: 300px;"></div>
+	<body>
+
+</html>
+
+<script type="text/javascript">  
+	var map = new BMap.Map("l-map");  
+	map.centerAndZoom(new BMap.Point(120.093, 30.315), 17);  
+	map.addControl(new BMap.ZoomControl());
+	var marker = new BMap.Marker(new BMap.Point(120.093, 30.315)); 
+	map.addOverlay(marker);
+</script>
