@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<script src="http://api.map.baidu.com/api?type=quick&ak=dg05Yew93CtRGyk9y96zwaRDGrCi0Y7f&v=1.0" type="text/javascript"></script> 
+	</head>
+
+
+	<body>
+		<h1>A Brief Geographical Introduction of ZJU</h1>
+		<p> <i>You look at things and ask why;</i></p>
+		<p> <i>I dream of things that never were, and I say, why not?</i></p>
+		<div id="l-map" style="width:50%; height: 480px;"></div>
+		<p><b>This is an unofficial site created by Mojo Anfield.</b></p>
+	</body>
+</html>
+
+<script type="text/javascript">  
+	var map = new BMap.Map("l-map");  
+	map.centerAndZoom(new BMap.Point(120.094, 30.309), 16);  
+	map.addControl(new BMap.ZoomControl());
+
+	var marker1 = new BMap.Marker(new BMap.Point(120.091, 30.315)); 
+	map.addOverlay(marker1);
+	var tag1 = "<a href='丹青学园'>丹青学园</a>"
+				+"<p>青溪胜桐庐，水木有佳色</p>"
+				+"<p>丹阳城南秋海阴，丹阳城北楚云深</p>";                 
+	var infoWindow1 = new BMap.InfoWindow(tag1);
+	marker1.addEventListener("click", function(){this.openInfoWindow(infoWindow1);});
+
+	var marker2 = new BMap.Marker(new BMap.Point(120.088, 30.315)); 
+	map.addOverlay(marker2); 
+	var tag2 = "<a href='蓝田学园'>蓝田学园</a>" 
+				+"<p>沧海月明珠有泪，蓝田日暖玉生烟</p>";               
+	var infoWindow2 = new BMap.InfoWindow(tag2);
+	marker2.addEventListener("click", function(){this.openInfoWindow(infoWindow2);});
+
+	var marker3 = new BMap.Marker(new BMap.Point(120.093, 30.315)); 
+	map.addOverlay(marker3);
+	var tag3 = "<a href='翠柏'>翠柏</a>"
+				+"<p>翠柏苦犹食，晨霞高可餐</p>";                 
+	var infoWindow3 = new BMap.InfoWindow(tag3);
+	marker3.addEventListener("click", function(){this.openInfoWindow(infoWindow3);});
+
+	var marker4 = new BMap.Marker(new BMap.Point(120.091, 30.314)); 
+	map.addOverlay(marker4); 
+	var tag4 = "<a href='食堂'>食堂</a>"                 
+	var infoWindow4 = new BMap.InfoWindow(tag4);
+	marker4.addEventListener("click", function(){this.openInfoWindow(infoWindow4);});
+
+	var marker5 = new BMap.Marker(new BMap.Point(120.095, 30.310)); 
+	map.addOverlay(marker5);   
+	var tag5 = "<a href='图书馆'>图书馆</a>"               
+	var infoWindow5 = new BMap.InfoWindow(tag5);
+	marker5.addEventListener("click", function(){this.openInfoWindow(infoWindow5);});
+
+	var marker6 = new BMap.Marker(new BMap.Point(120.089, 30.311)); 
+	map.addOverlay(marker6);
+	var tag6 = "<a href='操场'>操场</a>"                  
+	var infoWindow6 = new BMap.InfoWindow(tag6);
+	marker6.addEventListener("click", function(){this.openInfoWindow(infoWindow6);});
+</script>
