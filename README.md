@@ -19,6 +19,6 @@ A very large part of this assignment is associated with html. It may seem very s
 
 Just a word on Baidu Map API. Like Google Maps, it's completely free. To use it, you have to go and register at baidu. Once you've done that bit, you'll get unlimited access to Baidu Map API(before that, get a key). It provides a JavaScript interface, so I included it in all my html files.
 
-The final part is a freeze.py to render a whole set of pages using app.py, html templates and info.csv. I don't know for sure what mechanism behind Freezer module as of yet. Maybe I'll try and figure it out after final exams.
+The final part is a freeze.py to render a whole set of pages using app.py, html templates and info.csv. I don't know for sure what mechanism behind Freezer module is as of yet. Maybe I'll try and figure it out after final exams.
 
 
