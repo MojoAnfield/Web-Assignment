@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<script src="http://api.map.baidu.com/api?type=quick&ak=dg05Yew93CtRGyk9y96zwaRDGrCi0Y7f&v=1.0" type="text/javascript"></script> 
+	</head>
+
+	<body>
+		<h1>{{full_info.loc}}</h1>
+		<p>{{full_info.more}}</p>
+		<div id="l-map" style="width:40%; height: 300px;"></div>
+	<body>
+
+</html>
+
+<script type="text/javascript">  
+	var map = new BMap.Map("l-map");  
+	map.centerAndZoom(new BMap.Point({{full_info.lon}}, {{full_info.lat}}), 17);  
+	map.addControl(new BMap.ZoomControl());
+	var marker = new BMap.Marker(new BMap.Point({{full_info.lon}}, {{full_info.lat}})); 
+	map.addOverlay(marker);
+</script>
