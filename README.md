@@ -1,6 +1,9 @@
 # Web page with Baidu Map API
 22 Dec, 2016
 
+URL:https://mojoanfield.github.io/Web-Assignment/build/index.html
+(if you encounter "unsafe scripts" block, do remember to activate this access)
+
 Basically, I created a very very simple web page to visually present ZJU, zijingang Campus. The index page shows a wide view of campus from the map. I marked several my favourite places with pins. Clicking on the pin, a short note pops up; you can then follow the links and find out more for places of your interest.
 
 Inspired by http://first-news-app.readthedocs.io , this project is built with Flask microframework in python. To implement, the following are essential for this assignment:
