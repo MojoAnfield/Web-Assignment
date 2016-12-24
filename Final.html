@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dg05Yew93CtRGyk9y96zwaRDGrCi0Y7f"></script>
+		<style type="text/css">
+		body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+		</style>
+	</head>
+
+
+	<body>
+		<h1>A Brief Geographical Introduction of ZJU</h1>
+		<p><b><i>This is an unofficial site created by Mojo Anfield.</i></b></p>
+		<p>You have come here, in pursuit of your deepest urge</p>
+		<p>Click on a pin. Let it lead you to the mystery of ZJU</p>
+		<div id="allmap" style="width:100%; height: 600px;"></div>
+		
+	</body>
+</html>
+
+<script type="text/javascript">  
+	var map = new BMap.Map("allmap");  
+	map.centerAndZoom(new BMap.Point(120.094, 30.309), 16);  
+	map.addControl(new BMap.NavigationControl());    
+    map.addControl(new BMap.ScaleControl());    
+
+    var outline = [new BMap.Point(120.087004,30.31614),new BMap.Point(120.089448,30.301517),
+    				new BMap.Point(120.090993,30.3008),new BMap.Point(120.099006,30.301236),
+    				new BMap.Point(120.098718,30.311214),new BMap.Point(120.097892,30.315844),
+					new BMap.Point(120.094685,30.31494), new BMap.Point(120.094532,30.316865)];
+	var polygon = new BMap.Polygon(outline);
+	polygon.setFillColor("");
+	map.addOverlay(polygon);
+
+	var marker1 = new BMap.Marker(new BMap.Point(120.091, 30.315)); 
+	map.addOverlay(marker1);
+	var tag1 = "<h3>丹青学园</h3>"
+				+"<img style='float:right;margin:4px' id='imgDemo' src='http://dqxy.zju.edu.cn/static/bgb/images/favicon.ico' width='109' height='125' title='丹青'/>"
+				+"<p>青溪胜桐庐，水木有佳色</p>"
+				+"<p>丹阳城南秋海阴，丹阳城北楚云深</p>";                 
+	var infoWindow1 = new BMap.InfoWindow(tag1);
+	marker1.addEventListener("click", function(){this.openInfoWindow(infoWindow1);map.centerAndZoom(new BMap.Point(120.091, 30.315), 17);});
+	infoWindow1.addEventListener("close", function(){map.centerAndZoom(new BMap.Point(120.094, 30.309), 16);});
+
+	var marker2 = new BMap.Marker(new BMap.Point(120.088, 30.315)); 
+	map.addOverlay(marker2); 
+	var tag2 = "<h3>蓝田学园</h3>" 
+				+"<img style='float:right;margin:4px' id='imgDemo' src='http://lantian.zju.edu.cn/attachments/2012-11/07-1352182784-93928.jpg' width='109' height='125' title='蓝田'/>"
+				+"<p>沧海月明珠有泪，蓝田日暖玉生烟</p>";               
+	var infoWindow2 = new BMap.InfoWindow(tag2);
+	marker2.addEventListener("click", function(){this.openInfoWindow(infoWindow2); map.centerAndZoom(new BMap.Point(120.088, 30.315), 17);});
+	infoWindow2.addEventListener("close", function(){map.centerAndZoom(new BMap.Point(120.094, 30.309), 16);});
+
+	var marker3 = new BMap.Marker(new BMap.Point(120.093, 30.315)); 
+	map.addOverlay(marker3);
+	var tag3 = "<h3>翠柏</h3>"
+				+"<p>翠柏苦犹食，晨霞高可餐</p>";                 
+	var infoWindow3 = new BMap.InfoWindow(tag3);
+	marker3.addEventListener("click", function(){this.openInfoWindow(infoWindow3);map.centerAndZoom(new BMap.Point(120.093, 30.315), 17);});
+	infoWindow3.addEventListener("close", function(){map.centerAndZoom(new BMap.Point(120.094, 30.309), 16);});
+
+	var marker4 = new BMap.Marker(new BMap.Point(120.091, 30.314)); 
+	map.addOverlay(marker4); 
+	var tag4 = "<h3>食堂</h3>"  
+			+"<img style='float:right;margin:4px' id='imgDemo' src='http://img93.pp.sohu.com/images/blog/2006/10/24/13/25/10f0cdbb5ea.jpg ' width='109' height='125' title='食堂'/>"  
+			+"<p>全亚洲最大的食堂，没有之一</p>";               
+	var infoWindow4 = new BMap.InfoWindow(tag4);
+	marker4.addEventListener("click", function(){this.openInfoWindow(infoWindow4);map.centerAndZoom(new BMap.Point(120.091, 30.314), 17);});
+	infoWindow4.addEventListener("close", function(){map.centerAndZoom(new BMap.Point(120.094, 30.309), 16);});
+
+	var marker5 = new BMap.Marker(new BMap.Point(120.095, 30.310)); 
+	map.addOverlay(marker5);   
+	var tag5 = "<h3>图书馆</h3>" 
+				+"<img style='float:right;margin:4px' id='imgDemo' src='http://img3.fengniao.com/forum/attachpics/109/6/4321116.jpg ' width='109' height='125' title='图书馆'/>"   
+				+"<p>全亚洲最好的图书馆，没有之一</p>";              
+	var infoWindow5 = new BMap.InfoWindow(tag5);
+	marker5.addEventListener("click", function(){this.openInfoWindow(infoWindow5);map.centerAndZoom(new BMap.Point(120.095, 30.310), 17);});
+	infoWindow5.addEventListener("close", function(){map.centerAndZoom(new BMap.Point(120.094, 30.309), 16);});
+
+	var marker6 = new BMap.Marker(new BMap.Point(120.089, 30.311)); 
+	map.addOverlay(marker6);
+	var tag6 = "<h3>田径场</h3>"                 
+			+"<img style='float:right;margin:4px' id='imgDemo' src=' http://ppt.downhot.com/d/file/p/2013/05/15/df39be79fc3b4ad3474b2d445a71e4b0.jpg ' width='109' height='125' title='田径场'/>"
+			+"<p>全亚洲最好的足球场，没有之一</p>"; 
+	var infoWindow6 = new BMap.InfoWindow(tag6);
+	marker6.addEventListener("click", function(){this.openInfoWindow(infoWindow6);map.centerAndZoom(new BMap.Point(120.089, 30.311), 17);});
+	infoWindow6.addEventListener("close", function(){map.centerAndZoom(new BMap.Point(120.094, 30.309), 16);});
+</script>
