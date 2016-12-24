@@ -2,7 +2,7 @@
 24 Dec,2016
 The final submission is a totally static page without any python programming. It all comes down to html editing.
 Here's the link: https://mojoanfield.github.io/Web-Assignment/Final.html
---------------------------------------------------------------------------------------------------
+--
 22 Dec, 2016
 
 Check out this URL and view web page:https://mojoanfield.github.io/Web-Assignment/build/index.html
