@@ -2,16 +2,16 @@
 24 Dec,2016
 
 The final submission is a totally static page without any python programming. It all comes down to html editing.
-Here's the link: https://mojoanfield.github.io/Web-Assignment/Final.html
+Here's the [link](https://mojoanfield.github.io/Web-Assignment/Final.html)
 --
 22 Dec, 2016
 
-Check out this URL and view web page:https://mojoanfield.github.io/Web-Assignment/build/index.html
+Check out this URL and view [web page](https://mojoanfield.github.io/Web-Assignment/build/index.html)
 (if you encounter "unsafe scripts" block, do remember to activate this access)
 
 Basically, I created a very very simple web page to visually present ZJU, zijingang Campus. The index page shows a wide view of campus from the map. I marked several my favourite places with pins. Clicking on the pin, a short note pops up; you can then follow the links and find out more for places of your interest.
 
-Inspired by http://first-news-app.readthedocs.io , this project is built with Flask microframework in python. To implement, the following are essential for this assignment:
+Inspired by an [IRE tutorial](http://first-news-app.readthedocs.io) , this project is built with Flask microframework in python. To implement, the following are essential for this assignment:
 
 * Sublime Text 3
 * Python (I'm using Python 3, and presumably it's also fine with other versions)
